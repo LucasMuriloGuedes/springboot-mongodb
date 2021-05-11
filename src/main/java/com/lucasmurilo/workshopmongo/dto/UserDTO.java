@@ -10,10 +10,13 @@ public class UserDTO implements Serializable {
     private String name;
     private String email;
 
-    public UserDTO(User user){
-        id = user.getId();
-        name = user.getName();
-        email = user.getEmail();
+    public UserDTO() {
+    }
+
+    public UserDTO(User obj) {
+        id = obj.getId();
+        name = obj.getName();
+        email = obj.getEmail();
     }
 
     public String getId() {
